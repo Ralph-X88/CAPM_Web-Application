@@ -27,7 +27,7 @@ with title_container:
 # getting input from user
 col1,col2 = st.columns([1,1/3])  
 with col1:
-    stocks_list = st.multiselect('Choose any 4 Stocks', ('TSLA','AAPL','NFLX','MSFT','MGM','AMZN','META','NVDA', 'AMD','GOOGL','WMT','NKE','JPM'),['TSLA','AAPL','AMZN','GOOGL'])  #Here we give options of Ticker values of stocks to choose from
+    stocks_list = st.multiselect('Choose any 4 Stocks or more', ('TSLA','AAPL','NFLX','MSFT','MGM','AMZN','META','NVDA', 'AMD','GOOGL','WMT','NKE','JPM'),['TSLA','AAPL','AMZN','GOOGL'])  #Here we give options of Ticker values of stocks to choose from
 
 with col2:
     year = st.number_input('Number of Years',1,10) # Here we use number-input funcn to create option of choosing years to evaluate on - min value=1, max value=10
